@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color:rgba(255,255,255,0.5);
+  background-color:rgba(255, 255, 255, 0.6);
 }
 
 h1 {
@@ -15,12 +15,11 @@ h1 {
 }
 
 .creator-box {
-  background-color:rgba(255,255,255,0.5);
-  background-image: url('images/pattern-1phq.png');
+  background-color:rgba(255, 255, 255, 0.6);
   padding: 20px;
   margin-top: 60px;
 }
 
 .navbar {
-  background-color:rgba(255,255,255,0.5);
+  background-color:rgba(255, 255, 255, 0.6);
 }
