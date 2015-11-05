@@ -6,7 +6,7 @@
     <link href="/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <link href="/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="/css/cake-randomizer.css" rel="stylesheet" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Lobster|Open+Sans:400,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cabin:400,700|Lobster|Open+Sans:400,800' rel='stylesheet' type='text/css'>
     <style>
       body {
         background-image: url('images/<%= image[0] %>');
@@ -23,42 +23,45 @@
 
     <div class="container-fluid">
       <div class="row">
-      <div class="col-md-4 col-md-offset-4">
-        <form class="creator-box" method="post" action="<%= url '/' %>" role="form" id="cakecreator" name="cakecreator">
-          <div class="form-group">
-            <label for="name">Your name, please:</label>
-            <input class="form-control" type="text" id="name" name="name">
-          </div>
-          <div class="form-group">
-            <label for="size-option">How big should the cake be?</label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="size-option" id="size-option-s" value="option-s" checked>
-                Small
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="size-option" id="size-option-m" value="option-m">
-                Medium
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="size-option" id="size-option-l" value="option-l">
-                Large
-            </label>
-          </div>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" id="adventurousness" name="adventurousness">Feeling adventurous?
-            </label>
-          </div>
-          <div class="text-center">
-          <button type="submit" class="btn btn-default btn-lg" id="cakecreator-submit">Randomize!</button>
+        <% if @name.nil? -%>
+        <div class="col-md-4 col-md-offset-4">
+          <form class="creator-box" method="post" action="<%= url '/' %>" role="form" id="cakecreator" name="cakecreator">
+            <div class="form-group">
+              <label for="name">Your name, please:</label>
+              <input class="form-control" type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+              <label for="size-option">How big should the cake be?</label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size-option" id="size-option-s" value="option-s" checked>
+                  Small
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size-option" id="size-option-m" value="option-m">
+                  Medium
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size-option" id="size-option-l" value="option-l">
+                  Large
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="adventurousness" name="adventurousness">Feeling adventurous?
+              </label>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-default btn-lg" id="cakecreator-submit">Randomize!</button>
           </div>
         </form>
+        <% else -%><%== erb :recipe %>
+        <% end -%>
         </div>
       </div>
     </div>
