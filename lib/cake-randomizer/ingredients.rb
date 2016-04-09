@@ -23,9 +23,31 @@
 # Allergies!
 #
 
-FLOUR = ["white flour", "wholegrain flour", "gluten-free flour"]
-SUGAR = ["white sugar", "caster sugar", "brown sugar", "agave syrup", "black treacle"]
-FAT = []
-LIQUID = []
-SPICES = []
-OPTIONAL = [ { fruits: [], nuts: [], sprinkles: [], other: [] } ]
+FLOUR = ['white flour', 'wholegrain flour', 'gluten-free flour',
+         'spelt flour', '', '',]
+
+SUGAR = ['white sugar', 'caster sugar', 'brown sugar', 'agave syrup',
+         'black treacle', 'golden sirup', 'vanilla sugar']
+
+FAT = ['coconut oil', 'coconut milk', 'olive oil', 'rape oil',
+       'sunflower oil', 'margarine']
+
+LIQUID = ['water', 'soy milk', 'oat milk', 'macadamia milk', 'cashew milk',
+          'rice milk', 'soy-rice milk', 'almond milk', 'spelt milk',
+          'apple juice, non-filtered'
+         ]
+
+SPICES = ['fresh ginger', 'powdered ginger', 'cinnamon', 'vanilla', 'cardamon',
+          'chopped parsley', 'curry powder', 'coriander', 'chilli',
+          'double espresso']
+
+OPTIONAL = [{ fruits: ['chopped apples', 'grated apples', 'cherries',
+                       'shredded carrots', 'pears', 'bananas',
+                       'blueberries', 'strawberries', 'raspberries'] },
+            { nuts: ['chopped peanuts', 'chopped macadamia', 'raisins',
+                     'pecans', 'chopped cashews', "chopped almonds",
+                     'almond flakes'] },
+            { sprinkles: ['shredded coconut', 'oats', 'chopped chocolate',
+                          'lemon zest'] },
+            { other: ['unicorn dung', 'rainbows', 'a touch of love', 'liberal guilt'] }
+           ]
