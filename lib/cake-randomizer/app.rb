@@ -36,11 +36,9 @@ module CakeRandomizer
       @liquid = LIQUID.sample
       @spices = SPICES.sample + ', ' + SPICES.sample
       @optional = OPTIONAL.sample.values[0].sample
-      @recipe = 'Tasty recipe title'
       erb :layout, locals: {
         image: AUTHORS.sample,
         name: @name,
-        recipe: @recipe,
         flour: @flour,
         sugar: @sugar,
         fat: @fat,

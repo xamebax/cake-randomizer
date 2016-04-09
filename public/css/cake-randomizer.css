@@ -5,27 +5,27 @@ body {
 }
 
 header {
-  background-color:rgba(255, 255, 255, 0.6);
+  background-color:#E1D76E;
 }
 
 h1 {
   font-family: 'Lobster', cursive;
   font-size: 42px;
+  color: #1E1914;
 }
 
 .creator-box {
-  background-color:rgba(255, 255, 255, 0.6);
+  background-color:#D9E6DBD;
   padding: 20px;
   margin-top: 60px;
 }
 
 .navbar {
-  background-color:rgba(255, 255, 255, 0.6);
+  background-color: #6EA48D;
 }
 
 .recipe-welcome {
-  font-family: 'Cabin', sans-serif;
-  background-color:rgba(255, 255, 255, 0.6);
+  background-color: #D9E6DB;
   padding: 20px;
   margin-top: 60px;
 }

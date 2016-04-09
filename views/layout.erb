@@ -9,8 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans' rel='stylesheet' type='text/css'>
     <style>
       body {
-        background-image: url('images/<%= image[0] %>');
-        background-repeat: no-repeat;
+        background-image: url('images/l2.png');
       }
     </style>
   </head>
@@ -30,32 +29,6 @@
               <label for="name">Your name, please:</label>
               <input class="form-control" type="text" id="name" name="name">
             </div>
-            <div class="form-group">
-              <label for="size-option">How big should the cake be?</label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="size-option" id="size-option-s" value="option-s" checked>
-                  Small
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="size-option" id="size-option-m" value="option-m">
-                  Medium
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="size-option" id="size-option-l" value="option-l">
-                  Large
-              </label>
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox" id="adventurousness" name="adventurousness">Feeling adventurous?
-              </label>
-            </div>
             <div class="text-center">
               <button type="submit" class="btn btn-default btn-lg" id="cakecreator-submit">Randomize!</button>
           </div>
@@ -66,9 +39,9 @@
       </div>
     </div>
 
-    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-bottom">
       <div class="container">
-        Cake Randomizer, version: <%= CakeRandomizer::VERSION %>. Background picture taken by <a href="<%= image[2] %>"><%= image[1] %>.</a> Check out my <a href="https://github.com/xamebax">github</a>!
+        <a href="https://github.com/xamebax/cake-randomizer">Cake Randomizer <%= CakeRandomizer::VERSION %></a>.
       </div>
     </nav>
     <script src='<%= url "/js/jquery-2.0.3.js" %>'></script>
