@@ -14,7 +14,6 @@ module CakeRandomizer
 
     get '/' do
       erb :layout, locals: {
-        image: AUTHORS.sample,
         name: @name,
         recipe: @recipe
       }
@@ -29,7 +28,6 @@ module CakeRandomizer
       @spices = SPICES.sample + ', ' + SPICES.sample
       @optional = OPTIONAL.sample.values[0].sample
       erb :layout, locals: {
-        image: AUTHORS.sample,
         name: @name,
         flour: @flour,
         sugar: @sugar,
