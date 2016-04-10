@@ -2,49 +2,42 @@
 <html>
   <head>
     <title>♥ Cake randomizer ♥</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <link href="/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="/css/cake-randomizer.css" rel="stylesheet" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans' rel='stylesheet' type='text/css'>
-    <style>
-      body {
-        background-image: url('images/l2.png');
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header>
-      <div class="container">
-        <h1>Random has never been so tasty!</h1>
+      <div class="container-fluid" id="header">
       </div>
     </header>
 
     <div class="container-fluid">
-      <div class="row">
+
         <% if @name.nil? -%>
-        <div class="col-md-4 col-md-offset-4">
-          <form class="creator-box" method="post" action="<%= url '/' %>" role="form" id="cakecreator" name="cakecreator">
+        <div class="inner cover">
+          <h1 class="cover-heading">Random has never been so tasty.</h1>
+          <p class="lead">Generate your own, unique recipe. Use it to bake cakes or muffins. Resist the urge to say "eww" before you've tried it.</p>
+          <form class="creator-box" method="post" action="<%= url '/' %>" id="cakecreator" name="cakecreator">
             <div class="form-group">
-              <label for="name">Your name, please:</label>
-              <input class="form-control" type="text" id="name" name="name">
-            </div>
-            <div class="text-center">
+              <input class="form-control" type="hidden" id="name" name="name">
               <button type="submit" class="btn btn-default btn-lg" id="cakecreator-submit">Randomize!</button>
-          </div>
-        </form>
+            </div>
+          </form>
         <% else -%><%== erb :recipe %>
         <% end -%>
         </div>
-      </div>
     </div>
 
-    <nav class="navbar navbar-default navbar-fixed-bottom">
-      <div class="container">
-        <a href="https://github.com/xamebax/cake-randomizer">Cake Randomizer <%= CakeRandomizer::VERSION %></a>.
+    <div class="mastfoot">
+      <div class="inner">
+        <p><a href="https://github.com/xamebax/cake-randomizer">Cake Randomizer <%= CakeRandomizer::VERSION %></a>
       </div>
-    </nav>
-    <script src='<%= url "/js/jquery-2.0.3.js" %>'></script>
-    <script src='<%= url "/js/bootstrap.js" %>'></script>
+    </div>
+  <script src='<%= url "/js/jquery-2.0.3.js" %>'></script>
+  <script src='<%= url "/js/bootstrap.js" %>'></script>
   </body>
 </html>
