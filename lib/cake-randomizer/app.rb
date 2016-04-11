@@ -25,7 +25,7 @@ module CakeRandomizer
       @sugar = SUGAR.sample
       @fat = FAT.sample
       @liquid = LIQUID.sample
-      @spices = SPICES.sample + ', ' + SPICES.sample
+      @spices = SPICES.sample(2)
       @optional = OPTIONAL.sample.values[0].sample
       erb :layout, locals: {
         name: @name,
