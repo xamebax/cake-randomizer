@@ -1,10 +1,9 @@
 require 'erubis'
 require 'sinatra'
-require 'cake-randomizer'
+require 'cake_randomizer'
 
 module CakeRandomizer
   class App < Sinatra::Base
-
     # Settings
 
     set :erb, escape_html: true
