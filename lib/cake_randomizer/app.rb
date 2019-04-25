@@ -3,11 +3,13 @@ require 'sinatra'
 require 'cake_randomizer'
 
 module CakeRandomizer
+  # App stores the whole application
   class App < Sinatra::Base
     # Settings
 
     set :erb, escape_html: true
-    set :root, ::File.expand_path(::File.join(::File.dirname(__FILE__), '../..'))
+    set :root, ::File.expand_path(::File.join(::File.dirname(__FILE__),
+                                              '../..'))
 
     # Views
 
