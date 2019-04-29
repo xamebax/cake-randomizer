@@ -1,12 +1,11 @@
 language: rust
 sudo: required
 rust:
-- nightly
+  - nightly
 cache: cargo
 script:
-- |
-  cargo build &&
-  cargo test
+  - cargo build --verbose
+  - cargo test --verbose
 deploy:
   provider: heroku
   api_key:
