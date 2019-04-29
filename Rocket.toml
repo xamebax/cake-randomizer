@@ -1,0 +1,7 @@
+[development]
+base_url = "http://127.0.0.1:8000"
+
+[staging]
+
+[production]
+base_url = "https://cake-randomizer.herokuapp.com"
