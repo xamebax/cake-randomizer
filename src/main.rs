@@ -10,9 +10,9 @@ extern crate tera;
 extern crate rand;
 
 use rand::Rng;
-use tera::Context;
 use rocket_contrib::serve::StaticFiles;
 use rocket_contrib::templates::Template;
+use tera::Context;
 
 mod recipe;
 use recipe::*;
