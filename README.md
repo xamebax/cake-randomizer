@@ -1,8 +1,8 @@
-# Cake Randomizer
+# Cake Randomizer [![Build Status](https://travis-ci.org/xamebax/cake-randomizer.svg?branch=master)](https://travis-ci.org/xamebax/cake-randomizer)
 
 I am here to take your baking to the next level.
 
-Lives under https://cake-randomizer.herokuapp.com. Not finished.
+Lives under https://cake-randomizer.herokuapp.com.
 
 ## Usage
 
@@ -10,17 +10,14 @@ Lives under https://cake-randomizer.herokuapp.com. Not finished.
 
 ## Run
 
-This app was updated to run with Ruby 2.5.0.
+This is a Rust webapp. It uses Rocket (and thus requires a nightly Rust release).
 
-First, run `bundle install` in the command line to get all the gems.
+To launch it locally, run:
 
-Then, run `rackup config.ru` to start a development server.
-
-### Run in Docker
-
-There is a Dockerfile. To run the randomizer in a Docker container, do as follows:
-
-<!-- TODO: Write instructions on using the Dockerfile. -->
+```bash
+$ cargo build
+$ cargo run
+```
 
 ## Contributing
 
