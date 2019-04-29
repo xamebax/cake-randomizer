@@ -1,7 +1,12 @@
-language: ruby
-rvm:
- - 2.5.1
-script: bundle exec rubocop
+language: rust
+sudo: required
+rust:
+- nightly
+cache: cargo
+script:
+- |
+  cargo build &&
+  cargo test
 deploy:
   provider: heroku
   api_key:
