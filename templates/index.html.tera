@@ -1,0 +1,14 @@
+{% extends "base" %}
+
+{% block content %}
+<div class="inner">
+  <h1>Random has never been so tasty.</h1>
+  <p class="lead">Generate your own recipe. Use it to bake cakes or muffins. Resist the urge to say "eww" before you've tried it.</p>
+  <form method="post" action="/recipe" id="cakecreator" name="cakecreator">
+    <div class="form-group">
+      <input class="form-control" type="hidden" id="name" name="name">
+        <button type="submit" class="btn btn-default btn-lg" id="cakecreator-submit">Randomize!</button>
+    </div>
+  </form>
+</div>
+{% endblock content %}
