@@ -1,0 +1,62 @@
+/* PARTS ADAPTED FROM http://getbootstrap.com/examples/cover/ */
+
+body {
+  background-color: #204232;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 70px;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  color: #fff;
+}
+
+header {
+  background: url('../images/bg.png') #E1D76E 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 70px 0px;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 42px;
+  color: #B43653;
+}
+
+a, a:visited {
+  color: #B0D2C4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C13C60;
+  text-decoration: none;
+}
+
+#header {
+    background: url('../images/bg.png') #E1D76E 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    padding: 50px 0px;
+    color: #fff;
+}
+
+/* Custom default button */
+.btn-lg {
+  padding: 10px 20px;
+}
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
