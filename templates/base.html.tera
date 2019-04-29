@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>♥ Cake randomizer ♥</title>
+    <title>Cake randomizer</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="https://cake-randomizer.herokuapp.com/public/images/share.png" />
+    <link rel="icon" type="image/x-icon" href="public/images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="public/images/favicon.ico">
     <link href="public/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
     <link href="public/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="public/css/cake-randomizer.css" rel="stylesheet" media="screen">
