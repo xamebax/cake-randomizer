@@ -6,12 +6,12 @@
     <h1>Your ingredients:</h1>
     <ul class="list-unstyled">
       <li>1 cup {{ flour }}</li>
-      <li>½ teaspoon baking powder</li>
+      <li>½ - ¾ teaspoon baking powder</li>
       <li>⅓ - ½ cup {{ sugar }}</li>
       <li>5 table spoons {{ fat }}</li>
       <li>½ - ¾ cup {{ liquid }}</li>
       <li>½ cup {{ optional }}</li>
-      <li>¾ {{ spice }}, powdered or chopped if possible</li>
+      <li>¾ teaspoon {{ spice }}, powdered or chopped if applicable</li>
     </ul><h1>Your recipe:</h1>
     <p>
       Whisk all dry ingredients together in a bowl. Make a well in the middle and
@@ -21,7 +21,7 @@
       leaving around 1 cm space from the top for them to grow.
     </p>
     <p>
-      Bake in around 200 degrees Celsius for 20-30 minutes. Use a chopstick or
+      Bake in 180 degrees Celsius for 22-30 minutes. Use a chopstick or
       toothpick to check if the muffins are done (the toothpick should come out
       dry).
     </p>

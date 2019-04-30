@@ -8,7 +8,7 @@ pub struct Recipe {
 }
 
 pub static FAT: [&'static str; 6] = [
-    "coconut milk",
+    "coconut cream",
     "coconut oil",
     "margarine",
     "olive oil",
@@ -39,6 +39,8 @@ pub static LIQUID: [&'static str; 13] = [
     "apple juice, non-filtered",
     "barley milk",
     "cashew milk",
+    "cold, strong coffee",
+    "cold, strong earl grey tea",
     "hemp milk",
     "macadamia milk",
     "oat milk",
@@ -65,7 +67,7 @@ pub static SPICE: [&'static str; 26] = [
     "curry powder",
     "curry powder",
     "dill",
-    "double espresso",
+    // "double espresso",
     "fresh coriander",
     "fresh ginger",
     "fresh mint",
@@ -83,7 +85,6 @@ pub static FRUITS: [&'static str; 20] = [
     "apricots",
     "avocado",
     "blueberries",
-    "cherries",
     "chopped apples",
     "chopped bananas",
     "chopped mango",
@@ -92,6 +93,7 @@ pub static FRUITS: [&'static str; 20] = [
     "cooked pumpkin pulp",
     "cooked sweet potato pulp",
     "grated apples",
+    "pitted cherries",
     "plums",
     "pomegranade seeds",
     "raspberries",
