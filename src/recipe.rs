@@ -34,7 +34,7 @@ pub static SUGAR: [&'static str; 8] = [
     "white sugar",
 ];
 
-pub static LIQUID: [&'static str; 13] = [
+pub static LIQUID: [&'static str; 15] = [
     "almond milk",
     "apple juice, non-filtered",
     "barley milk",
@@ -52,7 +52,7 @@ pub static LIQUID: [&'static str; 13] = [
     "water",
 ];
 
-pub static SPICE: [&'static str; 26] = [
+pub static SPICE: [&'static str; 25] = [
     "anise seed",
     "basil",
     "black pepper",
